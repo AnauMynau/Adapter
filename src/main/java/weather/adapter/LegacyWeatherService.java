@@ -1,7 +1,7 @@
 package weather.adapter;
 
 
-// Adaptee (старый сервис)
+// Adaptee
 
 
 public class LegacyWeatherService {

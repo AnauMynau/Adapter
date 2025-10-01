@@ -2,12 +2,8 @@ package weather.adapter;
 
 import java.util.Locale;
 
-// Adapter (переходник)
+// Adapter
 
-/**
- * Adapter: реализует целевой интерфейс WeatherProvider,
- * внутри обращается к LegacyWeatherService и конвертирует единицы.
- */
 public class WeatherAdapter implements WeatherProvider {
     private final LegacyWeatherService legacy;
 
@@ -30,13 +26,12 @@ public class WeatherAdapter implements WeatherProvider {
         return format("%.1f kph", kmh);
     }
 
-    // ==== helpers (малые методы, один уровень абстракции) ====
+    // ==== helpers ====
     private static double kelvinToCelsius(double kelvin) { return kelvin - 273.15; }
     private static double msToKmh(double ms) { return ms * 3.6; }
 
 
     private static String format(String pattern, double value) {
-        // фиксируем Locale, чтобы точка была разделителем везде одинаково
         return String.format(Locale.US, pattern, value);
     }
 }

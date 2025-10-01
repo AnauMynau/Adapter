@@ -1,6 +1,6 @@
 package weather.adapter;
 
-// Target (то, что ждёт клиент)
+// Target
 
 public interface WeatherProvider {
     String getTemperatureC();

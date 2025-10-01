@@ -1,8 +1,6 @@
 package weather.adapter;
 
-// Client (демо/точка входа)
-
-/** Client: работает ТОЛЬКО с WeatherProvider, не знает про Кельвины и м/с. */
+// Client
 
 public class WeatherApp {
     public static void main(String[] args) {
