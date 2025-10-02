@@ -10,10 +10,10 @@ public class WeatherApp {
                 5.0
         );
 
-        // Переходник:
+        // Переходник
         WeatherProvider provider = new WeatherAdapter(legacy);
 
-        // Клиент получает уже удобные строки:
+        // удобные строки:
         System.out.println("Temperature : " + provider.getTemperatureC());
         System.out.println("Wind        : " + provider.getWindKmh());
     }

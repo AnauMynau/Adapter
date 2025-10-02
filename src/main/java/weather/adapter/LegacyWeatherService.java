@@ -1,8 +1,6 @@
 package weather.adapter;
 
-
 // Adaptee
-
 
 public class LegacyWeatherService {
     private final double tempKelvin;
