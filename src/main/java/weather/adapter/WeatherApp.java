@@ -4,7 +4,6 @@ package weather.adapter;
 
 public class WeatherApp {
     public static void main(String[] args) {
-        // Сырой источник (его как будто "нельзя трогать"):
         LegacyWeatherService legacy = new LegacyWeatherService(
                 300.15,
                 5.0
